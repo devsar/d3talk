@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+        <pre style="font-size:36px;">
+        <code>
+// Update…
+var p = d3.select("body").selectAll("p")
+    .data([4, 8, 15, 16, 23, 42])
+    .text(String);
+
+// Enter…
+p.enter().append("p")
+    .text(String);
+
+// Exit…
+p.exit().remove();
+
+</code></pre>
+      </div>
+      <div id="footer">
+        Selections
+      </div>
+    </div>
+    <script type="text/javascript" src="hijs/hi.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+        Algo de codigo
+        <pre style="font-size:36px;">
+        <code>
+// selections (simil a jquery o prototype)
+d3.selectAll("p").style("color", "white");
+
+// pero puede asignar funciones
+d3.selectAll("p").style("color", function() {
+  return "hsl(" + Math.random() * 3 + ",100%,50%)";
+});
+
+</code></pre>
+      </div>
+      <div id="footer">
+        Selections
+      </div>
+    </div>
+    <script type="text/javascript" src="hijs/hi.js"></script>
+  </body>
+</html>
